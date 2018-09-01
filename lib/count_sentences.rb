@@ -1,4 +1,4 @@
-
+require "pry"
 class String
  
   def initialize(sentence)
@@ -19,6 +19,7 @@ class String
 
   def count_sentences
     #strings = []
+    binding.pry 
     self.split(/\.|\!|\?/).length
     #strings.reject |string| string.empty? 
     #strings.length 
