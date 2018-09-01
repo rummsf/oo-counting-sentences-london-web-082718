@@ -20,8 +20,6 @@ class String
   def count_sentences
     #strings = []
     binding.pry 
-    self.split(/\.|\!|\?/).length
-    #strings.reject |string| string.empty? 
-    #strings.length 
+    self.split(/\.|\!|\?/).reject |string| string.empty?.length  
   end 
 end 
